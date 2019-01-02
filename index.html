@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				padding: 0px;
+				width: 0px;
+				background: url(img/5bj.jpg);
+				background-size: cover;
+			}
+			
+				@-moz-keyframes fish{
+					0%{
+						background-position-y: 0px;
+						
+						}
+					
+					100%{background-position-y: -148px;
+					}
+				}
+				@-moz-keyframes run{
+					0%{
+						
+					}
+					50%{
+						transform: translateX(1518px);
+					}
+					70%{
+						transform-origin: left bottom;
+						transform: rotate(180deg);
+						
+					}
+					100%{
+						transform: translateX(-1518px);
+					}
+				}
+			
+			.fish-yellow{
+				background: url(img/fish1.png);
+				width: 52px;
+				height: 37px;
+				/*border: 1px solid red;*/
+				position: absolute;
+				animation: fish 1s steps(4) 9999;
+			}
+			.x{
+				width: 300px;
+				height: 300px;
+				position: relative;
+				animation: run 20s linear 99;
+			}
+			.y{
+				position: absolute;
+				border: 1px soli blue;
+				animation: y_top_bottom 5s linear 999;
+			}
+			@-moz-keyframes y_top_bottom{
+				0%{
+					top: 0px;
+				}
+				20%{
+					
+				}
+				50%{
+					top: 50%;
+				}
+				100%{
+					top:0px;
+				}
+			}
+			.f11{
+				background: url(img/shark.png);
+				height: 270px;
+				width: 509px;
+				background-size: cover;
+				border: 1px solid red;
+				animation: f11_run 3s steps(8) 999;
+			}
+			@-moz-keyframes f11_run{
+				0%{
+					background-position-y: 0;
+				}
+				100%{
+					background-position-y: -2160px;
+					}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="x">
+			<div class="y">
+				<div class="fish-yellow">
+				</div>
+				<div class="fish-yellow" style="left: 60px;">
+				</div>
+				<div class="fish-yellow" style="left: 120px;">
+				</div>
+			</div>
+		</div>
+		<div class="x">
+			<div class="y">
+				<div class="f11">
+			
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
