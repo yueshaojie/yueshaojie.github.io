@@ -11,7 +11,7 @@
 				background-size: cover;
 			}
 			
-				@-moz-keyframes fish{
+				@keyframes fish{
 					0%{
 						background-position-y: 0px;
 						
@@ -20,7 +20,7 @@
 					100%{background-position-y: -148px;
 					}
 				}
-				@-moz-keyframes run{
+				@keyframes run{
 					0%{
 						
 					}
@@ -46,8 +46,8 @@
 				animation: fish 1s steps(4) 9999;
 			}
 			.x{
-				width: 300px;
-				height: 300px;
+				width:100% ;
+				height: 100% ;
 				position: relative;
 				animation: run 20s linear 99;
 			}
@@ -56,7 +56,7 @@
 				border: 1px soli blue;
 				animation: y_top_bottom 5s linear 999;
 			}
-			@-moz-keyframes y_top_bottom{
+			@keyframes y_top_bottom{
 				0%{
 					top: 0px;
 				}
@@ -78,7 +78,7 @@
 				border: 1px solid red;
 				animation: f11_run 3s steps(8) 999;
 			}
-			@-moz-keyframes f11_run{
+			@-keyframes f11_run{
 				0%{
 					background-position-y: 0;
 				}
