@@ -91,7 +91,7 @@ nav>ul li:last-child{
 /*未来发展模块*/
 .middle{
 	
-	border: 1px green solid;
+	/*border: 1px green solid;*/
 	width: auto;
 	height: 650px;
 	
@@ -101,8 +101,11 @@ nav>ul li:last-child{
 	position: relative;
 	left: 200px;
 	top:50px;
-}
-.middle p,.middle_two{
+ 	}
+/*
+ * 网页公共代码块模块的标题主要设置文字居中
+ */
+.middle p,.middle_two p,.middle_three>p,.middle_four>p{
 	text-align: center;
 	font-size: 30px;
 	line-height:100px;
@@ -125,25 +128,103 @@ nav>ul li:last-child{
 	height: 450px;
 	width: 530px;
 }
-/*企业的需求
+/*我适合做程序员吗
  网页的第二部分
  * */
 .middle_two{
-	border: 1px green solid;
+	/*border: 1px green solid;*/
 	width: auto;
 	height: 650px;
 	background-color: white;
+	background: url(../img/背景.png);
+	background-repeat: no-repeat;
+	background-position: 50%,50%;
 }
-
+/**
+ * 第二部分的背景
+ */
+.middle_two>ul{
+	/*border: 1px red solid;*/
+	height: 70%;
+	margin-left:18%;
+	margin-top: 100px;
+}
+/**
+ * 第二部分样式以及字体
+ */
+.middle_two ul li{
+	
+	text-align: left;
+	line-height: 25px;
+	font-size: 16px;
+	color: whitesmoke;
+	float: left;
+	/*border: 1px black solid;*/
+	width: 25%;
+	height: 20%;
+	margin-left: 150px;
+	margin-bottom: 100px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+/**
+ * 标题样式
+ */
+.middle_two_label{
+	font-size:20px;
+}
 /*课程体系*/
 .middle_three{
-	border: 1px green solid;
-	width: auto;
+	/*border: 1px green solid;*/
+	
 	height: 650px;
 }
+/**
+ * 课程介绍模块
+ */
+.middle_three_ul{
+	margin-left: 10%;
+	width: 80%;
+}
+.middle_three_ul li{
+	box-shadow: 10px 10px 5px #888888;
+	/*设置课程之间的间距*/
+	margin-left: 80px;
+	margin-top: 50px;
+	float: left;
+	width: 200px;
+	height: 210px;
+	/*设置字体靠底部*/
+	text-align: center;
+	line-height:30px;
+	color: white;
+	font-family: "新宋体";
+	font-size: 20px;
+	border-radius:10px;
+	/*border: 1PX black solid;*/
+}
+.middle_three_ul li:hover{
+	cursor:pointer;
+	background-color: rgb(204,204,204);
+	
+}
+/*课程图标位置*/
+.middle_three_ul li img{
+	
+}
+/**
+ * 标题
+ */
+
 .middle_four{
 	border: 1px red solid;
 	width: auto;
 	height: 650px;
 	
+}
+/*底部的版权界面*/
+.bottom{
+	background-color: rgba(46,48,51,0.9);
+	height: 300px;
+	border:1px green solid;
 }
