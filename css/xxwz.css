@@ -1,0 +1,1534 @@
+html,
+button,
+input,
+select,
+textarea {
+	font-family: arial, tahoma, 'Microsoft Yahei', 'PingFang SC', '\5b8b\4f53', sans-serif
+}
+
+::-ms-clear,
+::-ms-reveal {
+	display: none
+}
+.wgt_topbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 42px;
+	padding: 14px 0;
+	z-index: 1000;
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .1);
+	background-color: #fff;
+	transition: all 2s cubic-bezier(0.215, .61, .355, 1) 0s
+}
+
+.wgt_topbar .layout {
+	position: relative
+}
+
+.wgt_topbar .layout .cmn-zhibo-logo-slogan {
+	vertical-align: middle;
+	display: inline-block;
+	width: 123px;
+	height: 43px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/yike-logo-white_fbb1b1e.svg) no-repeat;
+	background-size: contain
+}
+
+.wgt_topbar .layout .cmn-zhibo-logo-slogan2 {
+	vertical-align: middle;
+	display: inline-block;
+	width: 123px;
+	height: 43px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/yike-logo-white_fbb1b1e.svg) no-repeat;
+	background-size: contain;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/yike-logo_14178b5.svg) no-repeat
+}
+
+.wgt_topbar .layout .fhNav {
+	float: right;
+	position: relative
+}
+
+.wgt_topbar .layout .fhNav .bottomLine {
+	position: absolute;
+	background-color: #2cd176;
+	left: 12px;
+	top: 41px;
+	height: 2px;
+	width: 28px;
+	transition: all .3s ease
+}
+
+.wgt_topbar .layout .fhNav .nav {
+	float: right;
+	font-size: 0;
+	margin: -14px 10px 0 0
+}
+
+.wgt_topbar .layout .fhNav .nav a {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	position: relative;
+	font-size: 14px;
+	height: 100%;
+	margin: 15px 12px;
+	padding: 14px 0;
+	line-height: 1;
+	vertical-align: middle;
+	text-decoration: none;
+	outline: 0;
+	color: #666;
+	overflow: hidden;
+	margin-right: 20px;
+	transition: color .3s
+}
+
+.wgt_topbar .layout .fhNav .nav a:hover {
+	color: #2cd176;
+	cursor: pointer
+}
+
+.wgt_topbar .layout .fhNav .nav a.cur {
+	color: #2CD176
+}
+
+.wgt_topbar .layout .login-group {
+	float: right;
+	padding: 6px 0
+}
+
+.wgt_topbar .layout .login-group .btn-group {
+	display: inline-block
+}
+
+.wgt_topbar .layout .login-group .btn-group .btn {
+	-webkit-transition: .2s;
+	transition: .2s;
+	transition-property: color;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	padding: 7px 25px;
+	color: #61CA74;
+	font-size: 14px;
+	line-height: 1;
+	border-radius: 14px;
+	text-decoration: none;
+	outline: 0;
+	border: 1px solid #61CA74;
+	margin-left: 10px;
+	height: 30px;
+	width: 80px;
+	box-sizing: border-box
+}
+
+.wgt_topbar .layout .login-group .btn-group .btn.active {
+	color: #fff;
+	background: linear-gradient(-135deg, #6dbe46, #31a25c);
+	border: 0;
+	padding: 8px 26px
+}
+
+.wgt_topbar .layout .login-group .btn-group .btn:hover {
+	background: linear-gradient(-135deg, #76cd4c, #38b467);
+	color: #fff;
+	border: 0;
+	padding: 8px 26px
+}
+
+.wgt_topbar .layout .login-group .dropdown {
+	position: relative;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 6px;
+	font-size: 0;
+	text-align: center;
+	min-width: 80px;
+	min-height: 50px
+}
+
+.wgt_topbar .layout .login-group .dropdown:after {
+	position: absolute;
+	content: '';
+	top: 12px;
+	right: 7px;
+	width: 10px;
+	height: 5px;
+	background: #d2d2d2;
+	-webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+	clip-path: polygon(50% 0, 0 100%, 100% 100%);
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-toggle {
+	display: block;
+	color: #333;
+	padding: 5px 24px 5px 12px;
+	cursor: default;
+	max-width: 140px;
+	overflow: hidden;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-toggle * {
+	vertical-align: middle
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-toggle .avatar {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px
+}
+
+.wgt_topbar .layout .login-group .dropdown:hover {
+	z-index: 5
+}
+
+.wgt_topbar .layout .login-group .dropdown:hover:after {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.wgt_topbar .layout .login-group .dropdown:hover .dropdown-menu {
+	visibility: visible;
+	opacity: 1;
+	padding: 10px 0;
+	box-shadow: 0 7px 15px rgba(0, 0, 0, .1);
+	border-top: 1px solid #2cd176
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-menu {
+	visibility: hidden;
+	opacity: 0;
+	font-size: 12px;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	background: #fff;
+	width: 100%
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-menu li {
+	-webkit-transition: .2s;
+	transition: .2s
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-menu li a {
+	display: block;
+	text-decoration: none;
+	outline: 0;
+	padding: 5px 0;
+	color: #666
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-menu li:hover {
+	background: #61CA74
+}
+
+.wgt_topbar .layout .login-group .dropdown .dropdown-menu li:hover a {
+	color: #fff
+}
+
+.wgt_topbar.mini {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	height: 42px
+}
+
+.wgt_topbar.mini .layout .nav a {
+	color: #666;
+	transition: color .3s
+}
+
+.wgt_topbar.mini .layout .nav a:hover {
+	color: #2cd176
+}
+
+.wgt_topbar.mini .layout .nav a:after {
+	background: #666
+}
+
+.wgt_topbar.mini .login-group .dropdown .dropdown-toggle {
+	color: #666
+}
+
+.wgt_topbar.mini .login-group .dropdown .dropdown-menu {
+	background: #fff
+}
+
+.wgt_topbar.mini .login-group .dropdown .dropdown-menu li a {
+	color: #666
+}
+
+.fudao-index {
+	padding-top: 70px
+}
+
+.fudao-index .wgt_topbar {
+	position: fixed
+}
+
+.fudao-index .banner-wrap {
+	width: 100%;
+	height: 570px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/banner_bg_b6ce522.png) center center no-repeat;
+	background-size: 100% 570px
+}
+
+.fudao-index .banner-wrap .layout {
+	margin: 0 auto;
+	position: relative;
+	width: 1180px;
+	height: 100%
+}
+
+.fudao-index .banner-wrap .banner-text-wrap {
+	position: absolute;
+	top: 105px
+}
+
+.fudao-index .banner-wrap .banner-text-wrap .banner-slogan {
+	width: 485px;
+	height: 225px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/banner_slogan_b2ab3bf.png) center center no-repeat;
+	background-size: 100% 100%
+}
+
+.fudao-index .banner-wrap .banner-text-wrap .freecourse-btn {
+	display: inline-block;
+	text-align: center;
+	width: 264px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	color: #fff;
+	border: 0;
+	border-radius: 40px;
+	background: -webkit-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -moz-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -ms-linear-gradient(-135deg, #6dbe46, #31a25c);
+	margin: 40px 0 10px;
+	outline: 0;
+	transition: background .5s
+}
+
+.fudao-index .banner-wrap .banner-text-wrap .freecourse-btn:hover {
+	background: -webkit-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -moz-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -ms-linear-gradient(-135deg, #76cd4c, #38b467)
+}
+
+.fudao-index .banner-wrap .banner-mon-girl {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 399px;
+	height: 531px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/banner_people_83687ed.png) center center no-repeat;
+	background-size: 100% 100%
+}
+
+@media screen and (min-width:1440px) and (max-width:1919px) {
+	.fudao-index .banner-wrap {
+		height: 513px;
+		background-size: 100% 513px
+	}
+	.fudao-index .banner-wrap .layout {
+		width: 1062px
+	}
+	.fudao-index .banner-wrap .banner-text-wrap {
+		top: 94.5px;
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-transform-origin: center;
+		-ms-transform-origin: center;
+		transform-origin: center
+	}
+	.fudao-index .banner-wrap .banner-mon-girl {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-transform-origin: center bottom;
+		-ms-transform-origin: center bottom;
+		transform-origin: center bottom
+	}
+}
+
+@media screen and (max-width:1439px) {
+	.fudao-index .banner-wrap {
+		height: 462px
+	}
+	.fudao-index .banner-wrap .layout {
+		width: 956px
+	}
+	.fudao-index .banner-wrap .banner-text-wrap {
+		top: 85px;
+		-webkit-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		transform: scale(0.8);
+		-webkit-transform-origin: center;
+		-ms-transform-origin: center;
+		transform-origin: center
+	}
+	.fudao-index .banner-wrap .banner-mon-girl {
+		-webkit-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		transform: scale(0.8);
+		-webkit-transform-origin: center bottom;
+		-ms-transform-origin: center bottom;
+		transform-origin: center bottom
+	}
+}
+
+.data-part {
+	text-align: center;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/map_3ddbd55.png) center bottom no-repeat;
+	background-size: 100%
+}
+
+.data-part .main-title {
+	padding-top: 45px;
+	font-size: 32px;
+	color: #333
+}
+
+.data-part .sub-title {
+	font-size: 16px;
+	color: #999
+}
+
+.data-part .layout {
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 45px;
+	width: 1180px;
+	font-size: 0
+}
+
+.data-part .layout .data-li {
+	display: inline-block;
+	width: 24%;
+	box-sizing: border-box
+}
+
+.data-part .layout .data-li div.center-106 {
+	margin: 0 auto;
+	width: 106px
+}
+
+.data-part .layout .data-li div.center-170 {
+	margin: 0 auto;
+	width: 170px
+}
+
+.data-part .layout .data-li div.center-84 {
+	margin: 0 auto;
+	width: 84px
+}
+
+.data-part .layout .data-li div.center-97 {
+	margin: 0 auto;
+	width: 97px
+}
+
+.data-part .layout .data-li span {
+	font-size: 14px;
+	color: #999;
+	text-align: left
+}
+
+.data-part .layout .data-li span i {
+	font-size: 50px;
+	color: #333
+}
+
+.feature-part {
+	text-align: center;
+	background: #f1f2f6;
+	padding: 45px 0 55px
+}
+
+.feature-part .main-title {
+	font-size: 32px;
+	color: #333;
+	margin: 0 0 8px
+}
+
+.feature-part .sub-title {
+	font-size: 16px;
+	color: #999
+}
+
+.feature-part .feature-card {
+	width: 1180px;
+	margin: 0 auto
+}
+
+.feature-part .feature-card .feature-li {
+	width: 290px;
+	height: 380px;
+	display: inline-block;
+	position: relative;
+	margin-top: 45px;
+	top: 0;
+	transition: top .5s
+}
+
+.feature-part .feature-card .feature-li .bg-image {
+	width: 100%;
+	height: 300px;
+	background-size: contain
+}
+
+.feature-part .feature-card .feature-li .bg-image.study-home {
+	background-image: url(../img/zyb_170b65281483dc726d1bffc46ece64bf.png)
+}
+
+.feature-part .feature-card .feature-li .bg-image.contact {
+	background-image:url(../img/zyb_1519eafcf1e3b4a181b71caa5a431e0b.png)
+}
+
+.feature-part .feature-card .feature-li .bg-image.big-data {
+	background-image:url(../img/zyb_936091df912b60850521419e3a2f56ae.png)
+}
+
+.feature-part .feature-card .feature-li .bg-image.teacher-3 {
+	background-image:url(../img/zyb_3c6205ec96e0962e781dee8c6bc9e152.png)
+}
+
+.feature-part .feature-card .feature-li .bg-image .hover-div {
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 2;
+	text-align: center;
+	background: rgba(0, 0, 0, .6);
+	padding-top: 70px;
+	box-sizing: border-box;
+	opacity: 0;
+	transition: padding-top .5s
+}
+
+.feature-part .feature-card .feature-li .dd-word {
+	height: 80px;
+	width: 100%;
+	line-height: 80px;
+	text-align: center;
+	font-size: 16px;
+	border-bottom: 1px solid #f1f2f6;
+	transition: border-bottom .5s
+}
+
+.feature-part .feature-card .feature-li .dd-word:after {
+	position: absolute;
+	content: '';
+	bottom: -1px;
+	width: 0;
+	height: 1px;
+	background: #2cd176;
+	left: 50%;
+	transition: all .6s
+}
+
+.feature-part .feature-card .feature-li .dd-word i {
+	position: absolute;
+	bottom: -10px;
+	left: 140px;
+	color: #999
+}
+
+.feature-part .feature-card .feature-li:hover {
+	transition: top .5s;
+	top: -10px
+}
+
+.feature-part .feature-card .feature-li:hover .hover-div {
+	opacity: 1;
+	padding-top: 60px;
+	transition: padding-top .5s;
+	animation: hoverdelay .5s 1;
+	-webkit-animation: hoverdelay .5s 1
+}
+
+.feature-part .feature-card .feature-li:hover .dd-word {
+	transition: border-bottom .5s;
+	background-color: #fff;
+	box-shadow: 0 8px 12px 0 #e0ece5
+}
+
+.feature-part .feature-card .feature-li:hover .dd-word:after {
+	width: 100%;
+	left: 0;
+	background: #2cd176
+}
+
+.feature-part .feature-card .feature-li:hover .dd-word i {
+	transition: all .5s;
+	opacity: 0
+}
+
+@keyframes hoverdelay {
+	from {
+		/* opacity:0 */
+	}
+	to {
+		/* opacity:1 */
+	}
+}
+
+@-webkit-keyframes hoverdelay {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+.teacher-part {
+	text-align: center;
+	padding: 45px 0 55px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/green-bg@2x_23ce30c.png) no-repeat bottom
+}
+
+.teacher-part .main-title {
+	font-size: 32px;
+	color: #333;
+	margin: 0 0 8px
+}
+
+.teacher-part .sub-title {
+	font-size: 16px;
+	color: #999
+}
+
+.teacher-part .swiper {
+	position: relative
+}
+
+.teacher-part .swiper .pre-con,
+.teacher-part .swiper .next-con {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #e5e5e5;
+	cursor: pointer
+}
+
+.teacher-part .swiper .pre-con.now,
+.teacher-part .swiper .next-con.now {
+	background-color: #999
+}
+
+.teacher-part .swiper .pre-con.now:hover,
+.teacher-part .swiper .next-con.now:hover {
+	transition: all .5s;
+	background-color: #666
+}
+
+.teacher-part .swiper .pre-con .left-arrow,
+.teacher-part .swiper .next-con .left-arrow {
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	transform: rotate(-44deg);
+	line-height: 50px;
+	display: inline-block;
+	margin-top: 18px;
+	margin-left: 5px
+}
+
+.teacher-part .swiper .pre-con .right-arrow,
+.teacher-part .swiper .next-con .right-arrow {
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	transform: rotate(135deg);
+	line-height: 50px;
+	display: inline-block;
+	margin-top: 18px;
+	margin-left: -5px
+}
+
+.teacher-part .swiper .pre-con {
+	position: absolute;
+	left: 30px;
+	top: 180px
+}
+
+.teacher-part .swiper .next-con {
+	position: absolute;
+	right: 30px;
+	top: 180px
+}
+
+.teacher-part .swiper-container {
+	width: 940px;
+	position: relative
+}
+
+.teacher-part .swiper-container-horizontal .card-container li.teacher-card {
+	margin-left: 0
+}
+
+.teacher-part .card-container {
+	width: 940px;
+	height: 405px
+}
+
+.teacher-part .card-container li.teacher-card {
+	width: 300px;
+	height: 345px;
+	background-color: #f8f8f8;
+	margin: 60px 20px 0 0;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border-top: 2px solid
+}
+
+.teacher-part .card-container li.teacher-card.yellow {
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-image: linear-gradient(-135deg, #ffac41, #e8901e) 1;
+	border-color: #ffac41
+}
+
+.teacher-part .card-container li.teacher-card.green {
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-image: linear-gradient(-135deg, #2cd176, #14b75d) 1;
+	border-color: #2cd176
+}
+
+.teacher-part .card-container li.teacher-card.blue {
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	border-image: linear-gradient(-135deg, #53bcff, #29a4f1) 1;
+	border-color: #53bcff
+}
+
+.teacher-part .card-container li.teacher-card>img {
+	width: 135px;
+	height: 135px;
+	border-radius: 50%;
+	margin-top: -40px
+}
+
+.teacher-part .card-container li.teacher-card dt {
+	color: #333;
+	font-size: 20px;
+	margin-top: 20px
+}
+
+.teacher-part .card-container li.teacher-card dd {
+	color: #999;
+	font-size: 14px;
+	line-height: 1.7
+}
+
+.teacher-part .card-container li.teacher-card dd:last-child {
+	margin-top: 10px;
+	text-align: left
+}
+
+.circle-part {
+	text-align: center;
+	padding: 45px 80px 0;
+	margin: 0 auto;
+	height: 584px;
+	width: 620px;
+	overflow: hidden
+}
+
+.circle-part .main-title {
+	font-size: 32px;
+	color: #333;
+	margin: 0 0 8px
+}
+
+.circle-part .sub-title {
+	font-size: 16px;
+	color: #999
+}
+
+.circle-part .circle-circle {
+	position: relative;
+	margin-top: -10px;
+	height: 500px
+}
+
+.circle-part .circle-circle .fly {
+	position: absolute;
+	font-size: 20px
+}
+
+.circle-part .circle-circle .fly.before.left {
+	top: 301px;
+	left: -80px;
+	color: #FBA12D
+}
+
+.circle-part .circle-circle .fly.before {
+	color: #2CD176;
+	left: 0;
+	top: 155px
+}
+
+.circle-part .circle-circle .fly.in {
+	color: #45B7FF;
+	left: 267px;
+	top: 40px
+}
+
+.circle-part .circle-circle .fly.in i {
+	display: block;
+	height: 40px;
+	line-height: 40px
+}
+
+.circle-part .circle-circle .fly.in img {
+	margin: 0
+}
+
+.circle-part .circle-circle .fly.after {
+	color: #f0aaaa;
+	right: 0;
+	top: 155px
+}
+
+.circle-part .circle-circle .fly.after img {
+	margin-right: 17px;
+	margin-left: 0
+}
+
+.circle-part .circle-circle .fly.after.right {
+	top: 301px;
+	right: -80px;
+	color: #a8b8f6
+}
+
+.circle-part .circle-circle .fly img {
+	margin-left: 17px
+}
+
+.circle-part .circle-circle .fly i {
+	height: 82px;
+	line-height: 82px;
+	display: inline-block;
+	vertical-align: top
+}
+
+.circle-part .out-out-circle {
+	width: 678px;
+	height: 678px;
+	border-radius: 50%;
+	background: linear-gradient(180deg, #F1FFF7, #2cd176);
+	background: -webkit-linear-gradient(270deg, #F1FFF7, #2cd176);
+	background: -moz-linear-gradient(270deg, #F1FFF7, #2cd176);
+	background: -ms-linear-gradient(270deg, #F1FFF7, #2cd176);
+	opacity: 0;
+	position: absolute;
+	top: 23px;
+	left: -29px;
+	animation: enlargeoutout 6s 1.5s infinite;
+	-webkit-animation: enlargeoutout 6s 1.5s infinite
+}
+
+@keyframes enlargeoutout {
+	0% {
+		-webkit-transform: scale(0.744, .744);
+		-ms-transform: scale(0.744, .744);
+		transform: scale(0.744, .744);
+		opacity: .4
+	}
+	60% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes enlargeoutout {
+	0% {
+		-webkit-transform: scale(0.744, .744);
+		-ms-transform: scale(0.744, .744);
+		transform: scale(0.744, .744);
+		opacity: .4
+	}
+	60% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+}
+
+.circle-part .out-circle {
+	width: 620px;
+	height: 620px;
+	border-radius: 50%;
+	background: linear-gradient(180deg, #F1FFF7, #2cd176);
+	background: -webkit-linear-gradient(270deg, #F1FFF7, #2cd176);
+	background: -moz-linear-gradient(270deg, #F1FFF7, #2cd176);
+	background: -ms-linear-gradient(270deg, #F1FFF7, #2cd176);
+	opacity: 0;
+	position: absolute;
+	top: 52px;
+	left: 0;
+	animation: enlargeout 6s infinite;
+	-webkit-animation: enlargeout 6s infinite
+}
+
+@keyframes enlargeout {
+	0% {
+		-webkit-transform: scale(0.814, .814);
+		-ms-transform: scale(0.814, .814);
+		transform: scale(0.814, .814);
+		opacity: .4
+	}
+	60% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes enlargeout {
+	0% {
+		-webkit-transform: scale(0.814, .814);
+		-ms-transform: scale(0.814, .814);
+		transform: scale(0.814, .814);
+		opacity: .4
+	}
+	60% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		opacity: 0
+	}
+}
+
+.circle-part .center-circle {
+	width: 505px;
+	height: 505px;
+	border-radius: 50%;
+	background: -webkit-linear-gradient(90deg, #f8fffb, #aeecc5);
+	background: -moz-linear-gradient(90deg, #f8fffb, #aeecc5);
+	background: -ms-linear-gradient(90deg, #f8fffb, #aeecc5);
+	background: linear-gradient(180deg, #f8fffb, #aeecc5);
+	position: absolute;
+	top: 109.5px;
+	left: 57.5px
+}
+
+@keyframes enlargecenter {
+	from {
+		width: 385px;
+		height: 385px;
+		top: 120px;
+		left: 120px
+	}
+	to {
+		width: 505px;
+		height: 505px;
+		top: 57.5px;
+		left: 57.5px
+	}
+}
+
+@-webkit-keyframes enlargecenter {
+	from {
+		width: 385px;
+		height: 385px;
+		top: 120px;
+		left: 120px
+	}
+	to {
+		width: 505px;
+		height: 505px;
+		top: 57.5px;
+		left: 57.5px
+	}
+}
+
+.circle-part .inner-circle {
+	width: 330px;
+	height: 330px;
+	border-radius: 50%;
+	background: -webkit-linear-gradient(180deg, #a3eeaa, #78df82);
+	background: -moz-linear-gradient(180deg, #a3eeaa, #78df82);
+	background: -ms-linear-gradient(180deg, #a3eeaa, #78df82);
+	position: absolute;
+	top: 197px;
+	left: 145px
+}
+
+@keyframes enlargeinner {
+	from {
+		width: 210px;
+		height: 210px;
+		top: 205px;
+		left: 205px
+	}
+	to {
+		width: 330px;
+		height: 330px;
+		top: 145px;
+		left: 145px
+	}
+}
+
+@-webkit-keyframes enlargeinner {
+	from {
+		width: 210px;
+		height: 210px;
+		top: 205px;
+		left: 205px
+	}
+	to {
+		width: 330px;
+		height: 330px;
+		top: 145px;
+		left: 145px
+	}
+}
+
+.circle-part .center-sister {
+	width: 286px;
+	position: absolute;
+	top: 233px;
+	left: 160px
+}
+
+.refund-change-panel {
+	background: #f8f8f8
+}
+
+.refund-change-panel .refund-change {
+	margin: 0 auto;
+	width: 575px;
+	height: 90px;
+	display: flex
+}
+
+.refund-change-panel .refund-change .refund-any,
+.refund-change-panel .refund-change .change-any {
+	flex: 1;
+	text-align: center;
+	padding: 20px
+}
+
+.refund-change-panel .refund-change .refund-any li,
+.refund-change-panel .refund-change .change-any li {
+	display: inline-block
+}
+
+.refund-change-panel .refund-change .refund-any li.word,
+.refund-change-panel .refund-change .change-any li.word {
+	vertical-align: top;
+	margin-left: 12px
+}
+
+.refund-change-panel .refund-change .refund-any img,
+.refund-change-panel .refund-change .change-any img {
+	width: 50px;
+	height: 51px
+}
+
+.refund-change-panel .refund-change .refund-any dt,
+.refund-change-panel .refund-change .change-any dt {
+	color: #333;
+	font-size: 20px;
+	text-align: left
+}
+
+.refund-change-panel .refund-change .refund-any dd,
+.refund-change-panel .refund-change .change-any dd {
+	color: #999;
+	font-size: 14px;
+	text-align: left
+}
+
+.freecourse-box {
+	position: fixed;
+	bottom: -160px;
+	width: 100%;
+	height: 91px;
+	background: rgba(25, 26, 14, .79);
+	z-index: 999;
+	transition: all .7s
+}
+
+.freecourse-box .content-box {
+	margin: 0 auto;
+	width: 910px;
+	height: 100%
+}
+
+.freecourse-box .content-box .course-img {
+	margin-top: -60px;
+	float: left
+}
+
+.freecourse-box .content-box .course-img img {
+	width: 114px
+}
+
+.freecourse-box .content-box .content {
+	display: inline-block;
+	padding-left: 45px;
+	height: 91px;
+	line-height: 91px;
+	text-align: center;
+	overflow: hidden
+}
+
+.freecourse-box .content-box .content h2 {
+	float: left;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 400
+}
+
+.freecourse-box .content-box .content h2 span {
+	color: #FBA12D
+}
+
+.freecourse-box .content-box .content .freecourse-btn {
+	float: left;
+	text-align: center;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+	border: 0;
+	border-radius: 40px;
+	background: -webkit-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -moz-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -ms-linear-gradient(-135deg, #6dbe46, #31a25c);
+	margin: 25px 0 0 58px;
+	outline: 0;
+	transition: background .5s
+}
+
+.freecourse-box .content-box .content .freecourse-btn:hover {
+	background: -webkit-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -moz-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -ms-linear-gradient(-135deg, #76cd4c, #38b467)
+}
+
+.shiting-btn {
+	height: 140px;
+	margin: 0 auto;
+	background-color: #f8f8f8;
+	text-align: center;
+	display: none
+}
+
+.shiting-btn .get-shiting {
+	display: inline-block;
+	text-align: center;
+	width: 264px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	color: #fff;
+	border: 0;
+	border-radius: 40px;
+	background: -webkit-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -moz-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -ms-linear-gradient(-135deg, #6dbe46, #31a25c);
+	margin: 40px 0 10px;
+	outline: 0;
+	transition: background .5s
+}
+
+.shiting-btn .get-shiting:hover {
+	background: -webkit-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -moz-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -ms-linear-gradient(-135deg, #76cd4c, #38b467)
+}
+
+.hidden {
+	display: none!important
+}
+
+.shiting-dialog {
+	width: 578px!important;
+	height: 406px;
+	border-radius: 8px;
+	padding: 34px 47px 0 15px;
+	box-sizing: border-box;
+	border: 0!important
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg {
+	padding: 0;
+	height: 100%!important
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting {
+	height: 100%
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel {
+	height: 100%;
+	display: flex
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .left-teacher {
+	flex: 208px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/getShiting_43da1fe.png) no-repeat bottom;
+	background-size: contain
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form {
+	flex: 300px;
+	margin-left: 15px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form h2 {
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 12px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box * {
+	box-sizing: border-box
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box {
+	position: relative;
+	box-sizing: border-box;
+	border: 0;
+	line-height: 50px!important;
+	font-size: 14px;
+	margin-bottom: 10px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box.green {
+	border: 1px solid #5DCC6F!important;
+	border-radius: 40px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box.error {
+	border: 1px solid red!important;
+	border-radius: 40px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box:nth-child(2) {
+	padding-right: 90px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .errorContent {
+	display: inline-block;
+	line-height: 50px;
+	color: #FF3C37;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	font-size: 12px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .errorContent.vererr {
+	right: 110px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .errorContent.nam {
+	font-size: 12px;
+	right: 35px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .cmn-icons_dialog-error {
+	position: absolute;
+	right: 18px;
+	top: 18px;
+	color: #999;
+	cursor: pointer
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .cmn-icons_dialog-error.ver {
+	right: 100px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .cmn-icons_dialog-error:hover {
+	color: #333
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .verification {
+	cursor: pointer;
+	position: absolute;
+	height: 50px;
+	line-height: 50px;
+	right: 0;
+	top: 0;
+	text-align: center;
+	color: #2CD176;
+	font-size: 14px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .verification.disabled {
+	color: #d2d2d2
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .verification span {
+	display: inline-block;
+	width: 80px;
+	line-height: 1.2
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box input,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box button {
+	font-size: 14px;
+	border: 1px solid #E5E5E5!important;
+	padding: 0 31px!important;
+	line-height: 48px!important;
+	height: 48px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 40px;
+	outline: 0;
+	background: #fff
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box input::-webkit-input-placeholder,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box button::-webkit-input-placeholder {
+	color: #CCC
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box input::-moz-placeholder,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box button::-moz-placeholder {
+	color: #CCC
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box input:-ms-input-placeholder,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box button:-ms-input-placeholder {
+	color: #CCC
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box input.green,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box button.green {
+	border: 1px solid #5DCC6F!important;
+	border-radius: 40px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box input.error,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box button.error {
+	border: 1px solid red!important;
+	border-radius: 40px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionGrade,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionSubject {
+	cursor: pointer;
+	width: 140px;
+	text-align: left;
+	position: relative
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionGrade:after,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionSubject:after {
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/dropDown_5426aa7.svg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	content: " ";
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	position: absolute;
+	right: 12px;
+	top: 14px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionGrade.noSelect,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionSubject.noSelect {
+	color: #CCC
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionGrade {
+	margin-right: 10px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionSubject {
+	left: 2px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionSubmitBtn {
+	cursor: pointer;
+	background: -webkit-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -moz-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -ms-linear-gradient(-135deg, #6dbe46, #31a25c)
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box #attractionSubmitBtn:hover {
+	background: -webkit-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -moz-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -ms-linear-gradient(-135deg, #76cd4c, #38b467)
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .gradeList,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .subjectList {
+	top: 60px;
+	width: 140px;
+	position: absolute;
+	border-radius: 20px;
+	background: #fff;
+	z-index: 100;
+	overflow-y: auto;
+	max-height: 200px;
+	border: 1px solid #E5E5E5
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .gradeList::-webkit-scrollbar,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .subjectList::-webkit-scrollbar {
+	width: 10px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .gradeList::-webkit-scrollbar-thumb,
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .subjectList::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: linear-gradient(to bottom, transparent 0, transparent 20%, #efefef 22%, #efefef 75%, transparent 77%, transparent 100%)
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .phone-box .text-box .subjectList {
+	left: 185px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .btn-box {
+	padding: 80px;
+	box-sizing: border-box
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .submit-btn {
+	-webkit-transition: .2s;
+	transition: .2s;
+	background: #FA9142;
+	color: #FFF;
+	border: 0!important;
+	border-radius: 4px;
+	font-size: 28px;
+	width: 100%;
+	padding: 22px 0;
+	margin-top: 0;
+	-webkit-tap-highlight-color: transparent
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-shiting ul.form-panel .right-form .submit-btn.disabled {
+	background-color: #d2d2d2!important;
+	color: #fff!important
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-success {
+	margin: 0 auto;
+	padding: 30px 0 0 50px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-success div:first-child {
+	width: 100px;
+	height: 100px;
+	background: url(https://yy-s.zuoyebang.cc/static/fudao/index/resource/ok_3c5819c.svg);
+	margin: 0 auto
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-success div:nth-child(2) {
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	margin-top: 36px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-success div:nth-child(3) {
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	margin-top: 13px
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-success .get-shiting {
+	display: inline-block;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #fff;
+	border: 0;
+	border-radius: 40px;
+	background: -webkit-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -moz-linear-gradient(-135deg, #6dbe46, #31a25c);
+	background: -ms-linear-gradient(-135deg, #6dbe46, #31a25c);
+	margin: 40px 0 10px;
+	outline: 0;
+	margin-top: 30px;
+	transition: background .5s
+}
+
+.shiting-dialog>dd.con.no-icon.no-sub-msg #get-success .get-shiting:hover {
+	background: -webkit-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -moz-linear-gradient(-135deg, #76cd4c, #38b467);
+	background: -ms-linear-gradient(-135deg, #76cd4c, #38b467)
+}
+
+#get-shiting,
+#get-success {
+	display: none
+}
+
+.fudao-index .fudao-footer {
+	margin-top: 0
+}
+
+.fixed-right {
+	bottom: 160px!important
+}
